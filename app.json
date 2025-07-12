@@ -1,0 +1,87 @@
+{
+  "expo": {
+    "name": "PRACC",
+    "slug": "pracc-app",
+    "privacy": "unlisted",
+    "platforms": ["ios", "android"],
+    "version": "1.1.17",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d47a1"
+    },
+    "scheme": "pracc",
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/34d10c10-48fa-11e9-9cfd-fd77a789713a"
+    },
+    "notification": {
+      "icon": "./assets/notification-icon.png"
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "VIBRATE",
+        "NOTIFICATIONS",
+        "android.permission.CAMERA"
+      ],
+      "package": "com.pracc.mobileapp",
+      "versionCode": 15,
+      "adaptiveIcon": {
+        "backgroundColor": "#0D47A1",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "icon": "./assets/notification-icon.png"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pracc.mobileapp",
+      "buildNumber": "5",
+      "icon": "./assets/apple-icon.png",
+      "infoPlist": {
+        "NSCameraUsageDescription": "For scanning the QR code to allow you to login.",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "nextlevel",
+            "project": "mobile-app",
+            "authToken": "7e9a57a9963c4208aedfb367141fd1783ae109defbbd41deac81f72c591c6907",
+            "url": "https://sentry.nextlevelcsgo.com/"
+          }
+        }
+      ]
+    },
+    "description": "",
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "For scanning the QR code to allow you to login."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "34d10c10-48fa-11e9-9cfd-fd77a789713a"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
+  }
+}

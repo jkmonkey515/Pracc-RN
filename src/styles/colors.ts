@@ -1,0 +1,62 @@
+export const colors = {
+  primary: {
+    main: "#3f51b5",
+    light: "#7986cb",
+    dark: "#0D47A1", // "#303f9f",
+    contractText: "#fff",
+  },
+  secondary: {
+    contrastText: "#fff",
+    dark: "#c51162",
+    light: "#ff4081",
+    main: "#f50057",
+  },
+  action: {
+    active: "rgba(0, 0, 0, 0.54)",
+    hover: "rgba(0, 0, 0, 0.08)",
+    hoverOpacity: 0.08,
+    selected: "rgba(0, 0, 0, 0.14)",
+    disabled: "rgba(0, 0, 0, 0.26)",
+    disabledBackground: "rgba(0, 0, 0, 0.12)",
+  },
+  background: {
+    paper: "#fff",
+    default: "#fafafa",
+  },
+  divider: "rgba(0, 0, 0, 0.12)",
+  error: {
+    contrastText: "#fff",
+    dark: "#d32f2f",
+    light: "#e57373",
+    main: "#f44336",
+  },
+  text: {
+    disabled: "rgba(0, 0, 0, 0.38)",
+    hint: "rgba(0, 0, 0, 0.38)",
+    primary: "rgba(0, 0, 0, 0.87)",
+    secondary: "rgba(0, 0, 0, 0.54)",
+  },
+  grey: {
+    0: "#fff",
+    50: "#fafafa",
+    100: "#f5f5f5",
+    200: "#eeeeee",
+    300: "#e0e0e0",
+    400: "#bdbdbd",
+    500: "#9e9e9e",
+    600: "#757575",
+    700: "#616161",
+    800: "#424242",
+    900: "#212121",
+    A100: "#d5d5d5",
+    A200: "#aaaaaa",
+    A400: "#303030",
+    A700: "#616161",
+  },
+
+  header: {
+    background: "#0d47a1",
+    text: "#fff",
+    textInactive: "#9e9e9e",
+  },
+};

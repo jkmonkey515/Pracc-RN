@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 3.9.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      }
+    },
+    "preview": {
+      "channel": "alpha",
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      }
+    },
+    "production": {
+      "channel": "stable",
+      "env": {
+        "API_ENDPOINT": "https://pracc.com/api/"
+      },
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "schmittjoh@gmail.com",
+        "ascAppId": "1457864865",
+        "appleTeamId": "876C399D3C"
+      }
+    }
+  }
+}
